@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Makeup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Glamour Makeup</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Testimonals</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero" class="hero">
+        <h2>Your Beauty, Our Passion</h2>
+        <p>Discover the best makeup products for all your needs.</p>
+        <a href="#products" class="cta-button">Explore Products</a>
+    </section>
+    
+    <section id="products" class="card-slider">
+        <h1>Our Products</h1>
+        <div class="card-slider-container">
+            <div class="card">
+                <img src="lipstick.jpg" alt="Lipsticks">
+                <div class="card-content">
+                    <h3>Lipsticks</h3>
+                    <p>Vibrant and Long-lasting</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Foundations.webp" alt="Foundations">
+                <div class="card-content">
+                    <h3>Foundations</h3>
+                    <p>Smooth and Flawless</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="eyeshadow.jpg" alt="Eyeshadows">
+                <div class="card-content">
+                    <h3>Eyeshadows</h3>
+                    <p>Bold and Beautiful</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="kajal.webp" alt="Mascara">
+                <div class="card-content">
+                    <h3>Kajal & Mascara</h3>
+                    <p>Let eyes do the talking </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="info">
+        <h1>About</h1>
+     <p>Cosmetics are composed of mixtures of chemical compounds derived from <br>
+        either natural sources or synthetically created ones.<br>
+        Cosmetics have various purposes, including personal and skin care.<br>
+         They can also be used to conceal blemishes and enhance natural features<br> 
+         (such as the eyebrows and eyelashes). Makeup can also add colour to a person's<br> 
+         face, or change the appearance of the face entirely to resemble a different person,<br>
+          creature, or object.</p>
+    </section>
+    <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonials-container">
+        <div class="testimonial">
+            <img src="customer1.jpg" alt="Customer 1">
+            <div class="testimonial-content">
+                <p>"I absolutely love the products! They make me feel so confident and beautiful."</p>
+                <p><strong>- Jane Doe</strong></p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="customer2.jpg" alt="Customer 2">
+            <div class="testimonial-content">
+                <p>"The quality is top-notch, and the customer service is fantastic. Highly recommended!"</p>
+                <p><strong>- Sarah Smith</strong></p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="customer3.jpg" alt="Customer 3">
+            <div class="testimonial-content">
+                <p>"A game-changer in my makeup routine. I can't imagine using anything else."</p>
+                <p><strong>- Emily Johnson</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Information Section -->
+<section id="contact" class="contact">
+    <h1>Contact Us</h1>
+    <div class="contact-info">
+        <div class="contact-item">
+            <h3>Address</h3>
+            <p>123 Glamour Street, Beauty City, BC 12345</p>
+        </div>
+        <div class="contact-item">
+            <h3>Email</h3>
+            <p><a href="mailto:info@glamourmakeup.com">info@glamourmakeup.com</a></p>
+        </div>
+        <div class="contact-item">
+            <h3>Phone</h3>
+            <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Appointment Booking Form -->
+<section id="appointment" class="appointment">
+    <h2>Book an Appointment</h2>
+    <form action="submit-appointment.php" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Glamour Makeup. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,374 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 1rem;
+    padding-right: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.hero {
+    background: url('backgroundimage.avif') no-repeat center center/cover;
+    color: rgb(6, 5, 5);
+    text-align: center;
+    padding: 5rem 1rem;
+    height: 500px; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero h2{
+    margin: 0;
+}
+
+.hero p {
+    margin: 0.5rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    background-color: #e91e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c2185b;
+}
+
+.card-slider {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.card-slider h1 {
+    text-align: center;
+    color: #333;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+
+}
+
+.card-slider-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-left:80px;
+    padding-right:50px;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    margin: 0;
+}
+
+.card-content p {
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 1600px;
+    height:20px;
+}
+/* Existing styles... */
+
+.about {
+    background: url('about-background.jpg') no-repeat center center/cover; /* Add a background image */
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.about h1 {
+    color: #333;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+.about p {
+    margin: 1rem auto;
+    max-width: 800px; /* Limit the width for better readability */
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: justify;
+    background:#e91e63; /* Semi-transparent background for readability */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+}
+/* Testimonials Section */
+.testimonials {
+    padding: 3rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.testimonials-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-left:200px;
+    padding-right:30px;
+}
+
+.testimonial {
+    flex: 0 0 auto;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: left;
+    padding: 15px;
+    position: relative;
+}
+
+.testimonial img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial-content {
+    padding:0px ;
+}
+
+.testimonial-content p {
+    margin: 0.5rem 0;
+}
+
+.testimonial-content strong {
+    display: block;
+    margin-top: 0.5rem;
+    color: #e91e63;
+}
+
+@media (max-width: 768px) {
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 90%;
+    }
+}
+
+/* Ensure footer is responsive */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Ensure full width */
+    height: auto; /* Adjust height as needed */
+}
+/* Contact Information Section */
+.contact {
+    padding: 3rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact h1 {
+    color: #333;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    flex: 1 1 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item h3 {
+    margin: 0 0 0.5rem;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Appointment Booking Form */
+.appointment {
+    padding: 3rem 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.appointment h2 {
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #e91e63;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #c2185b;
+}
+
+/* Ensure footer is responsive */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Ensure full width */
+    height: auto; /* Adjust height as needed */
+}
